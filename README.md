@@ -8,10 +8,14 @@ To write a program to predict the marks scored by a student using the simple lin
 2. Anaconda – Python 3.7 Installation / Jupyter notebook
 
 ## Algorithm
-1. 
-2. 
-3. 
-4. 
+1. Read the given dataset
+2. Assign values for x and y and plot them
+3. Split the dataset into train and test data
+4. Import linear regression and train the     
+   data
+5. find Y predict
+6. Plot train and test data
+7. Calculate mse,mae and rmse 
 
 ## Program:
 ```
