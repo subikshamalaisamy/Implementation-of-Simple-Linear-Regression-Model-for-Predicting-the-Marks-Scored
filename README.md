@@ -27,6 +27,8 @@ RegisterNumber:  212220040162
 import numpy as np
 import pandas as pd
 dataset=pd.read_csv('/content/student_scores.csv')
+dataset.head()
+dataset.tail()
 #assingning hrs to x and scores to y
 x=dataset.iloc[:,:-1].values
 y=dataset.iloc[:,1].values
@@ -68,6 +70,9 @@ print('RMSE = ',rmse)
 ```
 
 ## Output:
+![head and tail](ht.png)
+![array](array.png)
+![array graph](ag.png)
 ![simple linear regression model for predicting the marks scored](testtrain.png)
 ![mse,mae,rmse](calc.png)
 
