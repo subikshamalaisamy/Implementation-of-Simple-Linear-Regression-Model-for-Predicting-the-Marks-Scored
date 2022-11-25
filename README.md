@@ -39,8 +39,6 @@ y=dataset.iloc[:,1].values
 print(x)
 print(y)
 import matplotlib.pyplot as np
-plt.scatter(x,y)
-plt.plot(x,y)
 from sklearn.model_selection import train_test_split
 x_train,x_test,y_train,y_test=train_test_split(x,y,test_size=2/3,random_state=0)
 from sklearn.linear_model import LinearRegression
@@ -62,6 +60,8 @@ plt.title('Test set(H vs S)')
 plt.xlabel('Hours')
 plt.ylabel('Scores')
 plt.show()
+print(y_predict)
+print(y_test)
 mse=mean_squared_error(y_test,y_predict)
 print('MSE = ',mse)
 
@@ -76,7 +76,7 @@ print('RMSE = ',rmse)
 ## Output:
 ![head and tail](ht.png)
 ![array](array.png)
-![array graph](ag.png)
+![Values of y predict and y test](y-prdict,test.png)
 ![simple linear regression model for predicting the marks scored](testtrain.png)
 ![mse,mae,rmse](calc.png)
 
